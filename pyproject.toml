@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compograph"
+version = "0.1.0"
+description = "A computational graph for map-reduce operations"
+authors = [
+    { name = "MV_enjoyer", email = "ggg.gggyy@yandex.ru" }
+]
+requires-python = ">=3.8"
+
+dependencies = []
+
+[tool.setuptools]
+packages = ["compgraph"]
