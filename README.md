@@ -38,7 +38,7 @@ pip install -r requirements.txt
 * Check installation by running tests:
 
 ```
-pytest tasks/compgraph/tests
+pytest tests
 ```
 
 ### Running the Tests
@@ -54,7 +54,7 @@ The following are covered in the test suite:
 Validate the correctness of implemented algorithms and operations. Example:
 
 ```
-pytest tasks/compgraph/tests/correctness
+pytest tests/correctness
 ```
 
 #### Memory Tests:
@@ -62,7 +62,7 @@ pytest tasks/compgraph/tests/correctness
 Evaluate memory usage during graph operations. Example:
 
 ```
-pytest tasks/compgraph/tests/memory
+pytest tests/memory
 ```
 
 #### Custom Tests:
@@ -70,7 +70,7 @@ pytest tasks/compgraph/tests/memory
 Verify additional user-defined scenarios. Example:
 
 ```
-pytest tasks/compgraph/tests/my_tests
+pytest tests/my_tests
 ```
 
 #### Style Tests
@@ -78,13 +78,5 @@ pytest tasks/compgraph/tests/my_tests
 Check that the code adheres to best practices and consistent styling:
 
 ```
-flake8 tasks/compgraph
-```
-
-#### Coverage Check
-
-Measure test coverage and ensure it meets the required threshold:
-
-```
-pytest --cov=tasks/compgraph/compgraph --cov-report=term-missing --cov-fail-under=95 tasks/compgraph/tests
+flake8 compgraph
 ```
